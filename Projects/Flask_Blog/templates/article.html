@@ -1,0 +1,14 @@
+{% extends 'layout.html' %}
+{% block content %}
+  <ul class="list-unstyled">
+    {% for post in posts %}
+      <li class="media">
+        <img src="..." class="mr-3" alt="...">
+        <div class="media-body">
+          <h5 class="mt-0 mb-1">{{ post.title }}</h5>
+          <p>{{ post.content }}</p>
+        </div>
+      </li>
+    {% endfor %}
+  </ul>
+{% endblock content %}
